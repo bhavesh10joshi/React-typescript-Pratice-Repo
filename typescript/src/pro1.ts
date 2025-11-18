@@ -6,16 +6,16 @@
 // {
 //     console.log("my name is bhavesh joshi !");
 // });
-function showit(sum:(k:number , m:number)=>number)
+// interfaces
+// function showit(person:{name:string , age : number})
+// {
+//     console.log("The person name is "+person.name);
+// }
+// interface joshi {name:string , age : number};
+// showit({name : "guarav" , age:19});
+function showit(person:sati)
 {
-    let i:number = sum(12,13);
-    setTimeout(function()
-    {
-        console.log("the sum is " + i);
-    },5000);
+    console.log("The person name is "+person.name);
 }
-showit(function(i:number , j:number)
-{
-    return (i+j);
-})
-
+interface sati {name:string , age : number};
+showit({name : "guarav" , age:19});
